@@ -1,6 +1,6 @@
 # Scaling_cnn_emr
 
-Yassine Assaadi: Deployement and scaling of Mobilenetv2 model
+Yassine Assaadi: Deployment and scaling of Mobilenetv2 model
 
 ![Diapositive4](https://github.com/Yassaadi/Scaling_cnn_emr/assets/106546639/3a935511-e1d7-4272-9bd7-fa75cd67849c)
 ![Diapositive5](https://github.com/Yassaadi/Scaling_cnn_emr/assets/106546639/1a88b2aa-f260-4c50-81ea-3a9c0599cc45)
