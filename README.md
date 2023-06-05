@@ -5,8 +5,10 @@
 # Table of Contents:
 
 Introduction
+
 1.1 Problem Statement
 1.2 Objectives in this Project
+
 1.3 Project Workflow
 Selected General Technical Choices
 2.1 Distributed Computing
@@ -66,7 +68,7 @@ and Application of Feature Extraction Using pandas UDF
 4.14 S3 Server Directory Structure at the End of the Project
 Conclusion
 
-#Introduction
+# Introduction
 ## 1.1 Problem Statement
 The young AgriTech startup, named "Fruits!", is looking to offer innovative solutions for fruit harvesting. The company's goal is to preserve the biodiversity of fruits by enabling specific treatments for each fruit species through the development of intelligent harvesting robots. In order to gain recognition, the startup plans to initially provide the general public with a mobile application that allows users to take a photo of a fruit and obtain information about it. The startup believes that this application will raise awareness among the public about fruit biodiversity and serve as a first version of the fruit image classification engine. Furthermore, the development of the mobile application will help build an initial version of the required Big Data architecture.
 
