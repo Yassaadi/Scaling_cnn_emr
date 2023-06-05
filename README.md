@@ -190,3 +190,31 @@ MobileNetV2 has been chosen for its fast execution, which is particularly suitab
 ![Diapositive17](https://github.com/Yassaadi/Scaling_cnn_emr/assets/106546639/7e83e4f3-effa-4544-9772-ff686cde2076)
 ![Diapositive18](https://github.com/Yassaadi/Scaling_cnn_emr/assets/106546639/7defb4f5-ac93-44bf-b54b-7c0cef892c2f)
 ![Diapositive19](https://github.com/Yassaadi/Scaling_cnn_emr/assets/106546639/0c37fe9e-77f9-415a-a47c-7c4cb6781866)
+
+# Conclusion
+We completed this project in two phases, taking into account the constraints imposed on us.
+In the first phase, we developed our solution locally on a virtual machine in a Linux Ubuntu environment.
+
+The initial phase involved setting up the Spark working environment. Spark has a parameter that allows us to work locally, simulating shared computing by considering each core of a processor as an independent worker. We worked on a smaller dataset to simply validate the proper functioning of the solution.
+
+We chose to implement transfer learning using the MobileNetV2 model. This model was selected for its lightweight nature, fast execution, and the low dimensionality of its output vector.
+
+The results were saved to disk in multiple partitions using the "parquet" format.
+
+The solution worked perfectly in local mode.
+
+The second phase involved creating a real computing cluster. The goal was to anticipate a future increase in workload.
+
+The best choice was to use the Amazon Web Services provider, which allows us to rent computing power on-demand at an affordable cost. This service is called EC2 and falls under the Infrastructure-as-a-Service (IaaS) offerings.
+
+We went further by using a higher-level service, Platform-as-a-Service (PaaS), by utilizing the EMR service. This allowed us to quickly instantiate multiple servers (a cluster) and have them installed and configured with various programs and libraries required for our project, such as Spark, Hadoop, JupyterHub, and the TensorFlow library.
+
+In addition to being faster and more efficient to set up, we have the assurance of the solution's proper functioning, as it was previously validated by Amazon engineers.
+
+We were also able to easily install the necessary packages on all machines in the cluster.
+
+Finally, with very few modifications and even more straightforwardly, we were able to run our notebook as we did locally. This time, we executed the processing on all the images in our "Test" folder.
+
+We opted for the Amazon S3 service to store the data for our project. S3 provides all the necessary conditions for storing and efficiently leveraging our data at a low cost. The allocated space is potentially unlimited, but the costs will depend on the space used.
+
+It will be easy for us to handle an increase in workload by simply resizing our cluster of machines (horizontally and/or vertically as needed). The costs will increase accordingly but will remain significantly lower than the expenses incurred by purchasing hardware or renting dedicated servers
