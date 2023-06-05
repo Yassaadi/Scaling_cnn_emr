@@ -7,65 +7,120 @@
 Introduction
 
 1.1 Problem Statement
+
 1.2 Objectives in this Project
 
 1.3 Project Workflow
+
 Selected General Technical Choices
+
 2.1 Distributed Computing
+
 2.2 Transfer Learning
+
 Deployment of the Solution Locally
+
 3.1 Working Environment
+
 3.2 Spark Installation
+
 3.3 Package Installation
+
 3.4 Library Import
+
 3.5 Definition of Paths for Loading Images and Saving Results
+
 3.6 Creating the SparkSession
+
 3.7 Data Processing
+
 3.7.1 Loading Data
+
 3.7.2 Model Preparation
+
 3.7.3 Definition of the Image Loading Process and Application
 of Feature Extraction Using pandas UDF
+
 3.7.4 Execution of Feature Extraction Actions
+
 3.8 Loading Saved Data and Result Validation
 Deployment of the Solution in the Cloud
+
 4.1 Cloud Provider Choice: AWS
+
 4.2 Technical Solution Choice: EMR
+
 4.3 Data Storage Solution Choice: Amazon S3
+
 4.4 Environment Configuration
+
 4.5 Uploading Data to S3
+
 4.6 Configuring the EMR Server
+
 4.6.1 Step 1: Software and Steps
+
 4.6.1.1 Software Configuration
+
 4.6.1.2 Modifying Software Parameters
+
 4.6.2 Step 2: Hardware
+
 4.6.3 Step 3: General Cluster Settings
+
 4.6.3.1 General Options
+
 4.6.3.2 Bootstrap Actions
+
 4.6.4 Step 4: Security
+
 4.6.4.1 Security Options
+
 4.7 Instantiating the Server
+
 4.8 Creating an SSH Tunnel to the EC2 Instance (Master)
+
 4.8.1 Creating Permissions for Incoming Connections
+
 4.8.2 Creating SSH Tunnel to the Driver
+
 4.8.3 Configuring FoxyProxy
+
 4.8.4 Accessing EMR Server Applications via SSH Tunnel
+
 4.9 Connecting to JupyterHub Notebook
+
 4.10 Code Execution
+
 4.10.1 Starting the Spark Session
+
 4.10.2 Package Installation
+
 4.10.3 Library Import
+
 4.10.4 Definition of Paths for Loading Images and Saving Results
+
 4.10.5 Data Processing
+
 4.10.5.1 Loading Data
+
 4.10.5.2 Model Preparation
+
 4.10.5.3 Definition of the Image Loading Process
 and Application of Feature Extraction Using pandas UDF
+
 4.10.5.4 Execution of Feature Extraction Actions
+
 4.10.6 Loading Saved Data and Result Validation
+
 4.11 Tracking Task Progress with Spark History Server
+
 4.12 Termination of EMR Instance
+
 4.13 Cloning the EMR Server (if needed)
+
 4.14 S3 Server Directory Structure at the End of the Project
+
 Conclusion
 
 # Introduction
